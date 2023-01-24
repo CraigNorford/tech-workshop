@@ -1,0 +1,141 @@
+/* NavBar Styling */
+.nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    margin-left: 52%;
+    font-size:x-large;
+}
+
+.nav li{
+    margin-left: 20px;
+}
+
+.nav h1{
+    font-size: 35px;
+}
+
+/* Webpage Color */
+/* * {
+    background-color: rgb(233, 238, 255);
+} */
+
+/* Styling for the image/text/button */
+img[alt*="giovanni"] {
+    margin-left: 8%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1{
+    font-size: 70px;
+    font-weight: 200;
+    font-family: sans-serif;
+    letter-spacing: .02em;
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+#LM {
+    width: 4cm;
+    font-size: 15px;
+    margin-left: 42%;
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Skills Page */
+h2 {
+    font-size: 50px;
+    font-weight: 30;
+    margin-left: 5%;
+}
+.SoftSkills {
+    border-radius: 9px;
+    background-color: peachpuff;
+    width: 20cm;
+    height: 20cm;
+    margin-left: 5%;
+}
+
+/* h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+} */
+
+.SoftSkills li {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.SoftSkills ul {
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+}
+.Hardskills {
+    border-radius: 9px;
+    background-color: peachpuff;
+    width: 20cm;
+    height: 20cm;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.HardSkills li {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.HardSkills ul {
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.ref {
+    margin-left: 5%;
+}
+.ref h4{
+    font-size: 20px;
+    padding: 1px;
+}
+
+.ref h5{
+    font-size: 15px;
+    font-style: italic;
+}
+
+h1{
+    margin-left: 3%;
+}
+
+    
+.group {
+    margin-left: 15%;
+}
+
+.football h3 {
+    margin-left: 3%
+}
