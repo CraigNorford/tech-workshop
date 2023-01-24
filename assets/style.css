@@ -1,22 +1,29 @@
 /* NavBar Styling */
-.nav {
-    position: sticky;
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 30px;
 }
 
-.nav ul{
-    margin-left: 52%;
-    font-size:x-large;
+nav ul{
+    font-size: 24px;
+    margin: 0px;
 }
 
-.nav li{
-    margin-left: 20px;
+nav li{
+    text-decoration: none;
 }
-
-.nav h1{
+/* Challenge 2: change the color of your name */
+nav h1{
     font-size: 35px;
+    color: rgb(140,200,140);
+    margin: 0px;
 }
 
 /* Webpage Color */
@@ -32,18 +39,23 @@ img[alt*="giovanni"] {
     
 }
 
-.text {
+/* Banner */
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text h1{
+.banner h1{
     font-size: 70px;
     font-weight: 200;
     font-family: sans-serif;
     letter-spacing: .02em;
     text-align: center;
+}
+
+.banner img {
+    object-fit: cover;
 }
 
 .about{
@@ -78,23 +90,12 @@ h2 {
     font-size: 40px;
     padding-top: 15px;
 } */
-
-.SoftSkills li {
-    font-size: 30px;
-    padding: 10px;
-}
-
-.SoftSkills ul {
-    padding-left: 60px;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-.page {
+.skills {
     display: flex;
     justify-content: space-between;
 }
-.Hardskills {
+
+article {
     border-radius: 9px;
     background-color: peachpuff;
     width: 20cm;
@@ -103,12 +104,12 @@ h2 {
     margin-right: 3%;
 }
 
-.HardSkills li {
+article li {
     font-size: 30px;
     padding: 10px;
 }
 
-.HardSkills ul {
+article ul {
     padding-left: 60px;
     padding-bottom: 10px;
     font-size: 20px;
