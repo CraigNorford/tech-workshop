@@ -11,6 +11,12 @@ h2 {
     font-size: 50px;
     font-weight: 30;
 }
+h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+    width: 100%;
+}
 
 a {
     text-decoration: none;
@@ -41,6 +47,7 @@ nav {
 }
 
 nav ul{
+    display: flex;
     font-size: 24px;
     margin-right: 4rem;
 }
@@ -74,6 +81,7 @@ img[alt*="giovanni"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .banner h1{
@@ -89,6 +97,7 @@ img[alt*="giovanni"] {
     object-fit: cover;
     margin: 0px;
     margin-top: 3rem;
+    border-right: 1px solid rgb(0, 0, 0);
 }
 
 .about{
@@ -97,9 +106,9 @@ img[alt*="giovanni"] {
 }
 
 .banner button {
-    width: 4cm;
     font-size: 24px;
-    margin-left: 42%;
+    margin: 15px auto;
+    padding: 10px 20px;
     background-color: rgb(255,255,255);
     color: rgb(140,200,140);
     border: 3px solid rgb(140,200,140);
@@ -113,32 +122,26 @@ img[alt*="giovanni"] {
 
 /* Skills Section */
 .skills {
-    background-color: rgb(240, 240, 240);
-}
-.articles {
+    background-color: rgba(140,200,140,0.3);
     display: grid;
-    grid-template-rows: 1fr, 1fr, 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-}
-article {
-    border-radius: 8px;
-    background-color: peachpuff;
-}
-article h3 {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 15px;
+    padding: 48px 30px;
 }
 
-article li {
-    font-size: 30px;
-    padding: 10px;
+article {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 32px;
+    margin: 16px 0px; 
 }
 
 article ul {
-    padding-left: 60px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    list-style: none;
+}
+
+.title {
+    grid-column: 1 / span 2;
 }
 /* references */
 .ref {
@@ -153,16 +156,21 @@ article ul {
     font-size: 15px;
     font-style: italic;
 }
-
-h1{
-    margin-left: 3%;
-}
-
-    
+  
 .group {
-    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .football h3 {
     margin-left: 3%
+}
+
+/* footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 40px 30px;
+    text-align: center;
 }
