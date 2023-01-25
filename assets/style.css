@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -100,12 +103,13 @@ img[alt*="giovanni"] {
     border-right: 1px solid rgb(0, 0, 0);
 }
 
-.about{
+#about{
     display: flex;
     flex-direction: column;
 }
 
-.banner button {
+.banner .button {
+    text-decoration: none;
     font-size: 24px;
     margin: 15px auto;
     padding: 10px 20px;
@@ -115,13 +119,13 @@ img[alt*="giovanni"] {
     transition: 0.3s;
 }
 
-.banner button:hover {
+.banner .button:hover {
     color: rgb(246, 141, 225);
     border: 3px solid rgb(246, 141, 225);
 }
 
 /* Skills Section */
-.skills {
+#skills {
     background-color: rgba(140,200,140,0.3);
     display: grid;
     grid-template-columns: 1fr 1fr;
