@@ -1,3 +1,32 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 30;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(246, 141, 225);
+}
+
+section {
+    padding: 0px 30px;
+}
+
 /* NavBar Styling */
 nav {
     display: flex;
@@ -13,11 +42,12 @@ nav {
 
 nav ul{
     font-size: 24px;
-    margin: 0px;
+    margin-right: 4rem;
 }
 
 nav li{
     text-decoration: none;
+    margin: 0px 10px;
 }
 /* Challenge 2: change the color of your name */
 nav h1{
@@ -55,7 +85,10 @@ img[alt*="giovanni"] {
 }
 
 .banner img {
+    overflow: hidden;
     object-fit: cover;
+    margin: 0px;
+    margin-top: 3rem;
 }
 
 .about{
@@ -63,45 +96,38 @@ img[alt*="giovanni"] {
     flex-direction: column;
 }
 
-#LM {
+.banner button {
     width: 4cm;
-    font-size: 15px;
+    font-size: 24px;
     margin-left: 42%;
-    background-color: black !important;
-    color: white !important;
+    background-color: rgb(255,255,255);
+    color: rgb(140,200,140);
+    border: 3px solid rgb(140,200,140);
+    transition: 0.3s;
 }
 
-/* Skills Page */
-h2 {
-    font-size: 50px;
-    font-weight: 30;
-    margin-left: 5%;
+.banner button:hover {
+    color: rgb(246, 141, 225);
+    border: 3px solid rgb(246, 141, 225);
 }
-.SoftSkills {
-    border-radius: 9px;
+
+/* Skills Section */
+.skills {
+    background-color: rgb(240, 240, 240);
+}
+.articles {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-gap: 20px;
+}
+article {
+    border-radius: 8px;
     background-color: peachpuff;
-    width: 20cm;
-    height: 20cm;
-    margin-left: 5%;
 }
-
-/* h3 {
+article h3 {
     text-align: center;
     font-size: 40px;
     padding-top: 15px;
-} */
-.skills {
-    display: flex;
-    justify-content: space-between;
-}
-
-article {
-    border-radius: 9px;
-    background-color: peachpuff;
-    width: 20cm;
-    height: 20cm;
-    margin-left: 2%;
-    margin-right: 3%;
 }
 
 article li {
@@ -114,7 +140,7 @@ article ul {
     padding-bottom: 10px;
     font-size: 20px;
 }
-
+/* references */
 .ref {
     margin-left: 5%;
 }
