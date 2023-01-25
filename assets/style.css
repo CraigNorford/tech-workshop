@@ -21,6 +21,10 @@ h3 {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -140,35 +144,42 @@ article {
     margin: 16px 0px; 
 }
 
-article ul {
-    list-style: none;
-}
-
 .title {
     grid-column: 1 / span 2;
 }
 /* references */
-.ref {
-    margin-left: 5%;
-}
-.ref h4{
-    font-size: 20px;
-    padding: 1px;
-}
 
-.ref h5{
-    font-size: 15px;
-    font-style: italic;
+#references {
+    grid-column: 1 / span 2;
 }
-  
-.group {
+ /* Interets Section  */
+
+ #interests {
+    padding: 30px 30px;
+ }
+ #interests h2 {
+    margin: 24px 0px;
+ }
+
+.card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom: 16px;
 }
-
-.football h3 {
-    margin-left: 3%
+.card .info {
+    text-align: left;
+    padding: 0px 20px;
+}
+.card .info  h3{
+    text-align: left;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* footer */
