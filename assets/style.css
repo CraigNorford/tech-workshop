@@ -1,24 +1,53 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     line-height: 1.5;
     color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 65%,
+        rgb(140, 163, 155) 35%,
+        rgb(140, 163, 155) 100%
+    );
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+    margin-top: 15%;
 }
 
 h2 {
     font-size: 50px;
     font-weight: 30;
 }
+
 h3 {
     text-align: center;
     font-size: 40px;
-    padding-top: 15px;
     width: 100%;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+h5 {
+    margin-left: 3%;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
 ul {
@@ -29,29 +58,29 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: 0.3s;
+    padding-right: 20px;
 }
+
+
+.fa-solid {
+    margin-left: 32%;
+    margin-top: 2cm;
+}
+
 
 a:hover {
     text-decoration: none;
-    color: rgb(246, 141, 225);
+    color: rgb(140, 163, 155) ;
 }
 
-section {
-    padding: 0px 30px;
-}
 
 /* NavBar Styling */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    width: 100%;
+    width: 58%;
     padding: 10px 30px;
-}
+    font-family: 'Playfair Display', serif;
+}    
 
 nav ul{
     display: flex;
@@ -65,46 +94,35 @@ nav li{
 }
 /* Challenge 2: change the color of your name */
 nav h1{
-    font-size: 35px;
-    color: rgb(140,200,140);
+    font-size: 20px;
     margin: 0px;
 }
 
-/* Webpage Color */
-/* * {
-    background-color: rgb(233, 238, 255);
-} */
-
 /* Styling for the image/text/button */
-img[alt*="giovanni"] {
-    margin-left: 8%;
-    margin-right: 2%;
-    margin-bottom: 1%;
-    
-}
 
 /* Banner */
 .banner {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 16%;
 }
 
 .banner h1{
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 200;
     font-family: sans-serif;
     letter-spacing: .02em;
-    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-left: 3%;
+    
 }
 
+
 .banner img {
+    position: fixed;
     overflow: hidden;
     object-fit: cover;
-    margin: 0px;
-    margin-top: 3rem;
-    border-right: 1px solid rgb(0, 0, 0);
+    margin-left: 74%;
+    margin-top: 4cm;
 }
 
 #about{
@@ -112,40 +130,50 @@ img[alt*="giovanni"] {
     flex-direction: column;
 }
 
+
 .banner .button {
     text-decoration: none;
     font-size: 24px;
     margin: 15px auto;
+    margin-left: 28%;
+    margin-top: 3cm;
     padding: 10px 20px;
-    background-color: rgb(255,255,255);
-    color: rgb(140,200,140);
-    border: 3px solid rgb(140,200,140);
+    background-color: rgb(105, 105, 105);
+    color: white;
+    border: 2px;
+    border-radius: 25px;
     transition: 0.3s;
 }
 
 .banner .button:hover {
-    color: rgb(246, 141, 225);
-    border: 3px solid rgb(246, 141, 225);
+    color: rgb(105, 105, 105);
+    background-color: white;
 }
 
 /* Skills Section */
 #skills {
-    background-color: rgba(140,200,140,0.3);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 48px 30px;
+    padding: 30px 30px;
+    letter-spacing: 2px;
+    font-weight: 200px;
 }
 
 article {
-    border: 3px solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgb(0, 0, 0);
+    /* background-color: rgba(255, 255, 255, 1); */
     padding: 10px 32px;
     margin: 16px 0px; 
+    width: 25cm;
+    font-weight: 200px;
 }
+
+p {
+    margin-left: 1%;
+}
+
 
 .title {
     grid-column: 1 / span 2;
+    letter-spacing: 2px;
 }
 /* references */
 
@@ -157,6 +185,7 @@ article {
  #interests {
     padding: 30px 30px;
  }
+
  #interests h2 {
     margin: 24px 0px;
  }
@@ -166,15 +195,19 @@ article {
     grid-template-columns: 3fr 1fr;
     height: 300px;
     overflow: hidden;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 16px;
+    width: 27cm;
+
 }
 .card .info {
-    text-align: left;
+    margin-left: 10px;
     padding: 0px 20px;
 }
 .card .info  h3{
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .card img {
     width: 100%;
